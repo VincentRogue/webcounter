@@ -13,6 +13,14 @@ btns.forEach(function (btn) {
             count--;
         } else if (styles.contains("increase")) {
             count++;
+        } else if (styles.contains("sub")) {
+            count = count - 10;
+        } else if (styles.contains("add")) {
+            count = count + 10;
+        } else if (styles.contains("multiply")) {
+            count = count * 2;
+        } else if (styles.contains("divide")) {
+            count = count / 2;
         } else {
             count = 0;
         }
